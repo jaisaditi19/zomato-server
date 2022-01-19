@@ -77,7 +77,7 @@ Router.get(
     passport.authenticate("google", { failureRedirect: "/" }),
     (req, res) => {
       return res.redirect(
-        `https://61e7c3be4616a0868ccffe03--vibrant-neumann-9e8160.netlify.app/google/${req.session.passport.user.token}`
+        `https://vibrant-neumann-9e8160.netlify.app/google/${req.session.passport.user.token}`
       );
     // return res.status(200).json({token:req.session.passport.user.token, status:"success"});
     }
